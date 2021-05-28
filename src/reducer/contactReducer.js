@@ -4,7 +4,7 @@ const initialState = {
   contacts: [
     {
       "id": 1,
-      "name": "Leanne Graham",
+      "name": "Ashish Nirvikar",
       "username": "Bret",
       "email": "Sincere@april.biz",
       "address": {
@@ -17,7 +17,7 @@ const initialState = {
           "lng": "81.1496"
         }
       },
-      "phone": "1-770-736-8031 x56442",
+      "phone": "9096805859",
       "website": "hildegard.org",
       "company": {
         "name": "Romaguera-Crona",
@@ -27,7 +27,7 @@ const initialState = {
     },
     {
       "id": 2,
-      "name": "Ervin Howell",
+      "name": "Vishal Yadav",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
       "address": {
@@ -50,7 +50,7 @@ const initialState = {
     },
     {
       "id": 3,
-      "name": "Clementine Bauch",
+      "name": "Omkar Karangutkar",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
       "address": {
@@ -73,7 +73,7 @@ const initialState = {
     },
     {
       "id": 4,
-      "name": "Patricia Lebsack",
+      "name": "Pravin Bhogulkar",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
       "address": {
@@ -96,7 +96,7 @@ const initialState = {
     },
     {
       "id": 5,
-      "name": "Chelsey Dietrich",
+      "name": "Aniket Ghaytadkar",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
       "address": {
@@ -119,7 +119,7 @@ const initialState = {
     },
     {
       "id": 6,
-      "name": "Mrs. Dennis Schulist",
+      "name": "Nilesh Aawale",
       "username": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
       "address": {
@@ -142,7 +142,7 @@ const initialState = {
     },
     {
       "id": 7,
-      "name": "Kurtis Weissnat",
+      "name": "Hrutik Pansare",
       "username": "Elwyn.Skiles",
       "email": "Telly.Hoeger@billy.biz",
       "address": {
@@ -165,7 +165,7 @@ const initialState = {
     },
     {
       "id": 8,
-      "name": "Nicholas Runolfsdottir V",
+      "name": "Nishikant Satpute",
       "username": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
       "address": {
@@ -188,7 +188,7 @@ const initialState = {
     },
     {
       "id": 9,
-      "name": "Glenna Reichert",
+      "name": "Tushar Dhembare",
       "username": "Delphine",
       "email": "Chaim_McDermott@dana.io",
       "address": {
@@ -211,7 +211,7 @@ const initialState = {
     },
     {
       "id": 10,
-      "name": "Clementina DuBuque",
+      "name": "Ram Shelavale",
       "username": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
       "address": {
@@ -254,7 +254,7 @@ export const contactReducer = (state = initialState, action) => {
         ...state,
         contact: arr,
       };
-    case "UPDATE_CONTACT":
+    case "UPDATE_CONTACT":        
       return {
         ...state,
         contacts: state.contacts.map(contact => contact.id == action.payload.id ? action.payload : contact)

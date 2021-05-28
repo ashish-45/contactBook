@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import AddContact from './components/contact/AddContact';
 import EditContact from './components/contact/EditContact';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route exact path='/editcontact/:id' component={EditContact} />
               </Switch>
             </div>
+            <Footer />
           </div>
         </div>
       </Router>

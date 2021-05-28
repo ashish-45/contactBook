@@ -23,7 +23,7 @@ const Contact = ({ contact, selectAll }) => {
                 <Link to={`/editcontact/${id}`}>
                     <span className='material-icons mr-2 text-danger'>edit</span>
                 </Link>
-                <span className='material-icons' onClick={() => dispatch(deleteContact(id))}>remove_circle</span>
+                <span className='material-icons' style={{cursor:'pointer'}} onClick={() => dispatch(deleteContact(id))}>delete</span>
             </td>
 
         </tr>
